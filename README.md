@@ -55,5 +55,35 @@ Eg:
 <td>row 2, cell 2</td>
 </tr>
 </table>
-
+ 
 ```
+
+## 表单
+```html
+1.表单
+<form>元素定义html表单,<input>元素是最重要的表单元素。
+  Eg:
+  <form>
+  First name:<br>
+  <input type="text" name="firstname">
+  </form>
+  ```
+  效果如下：
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+<p>请注意表单本身是不可见的。</p>
+
+<p>同时请注意文本字段的默认宽度是 20 个字符。</p>
+
+</body>
+</html>
