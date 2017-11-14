@@ -61,29 +61,38 @@ Eg:
 ## 表单
 ```html
 1.表单
-<form>元素定义html表单,<input>元素是最重要的表单元素。
+<form>元素定义html表单,<input>元素是最重要的表单元素。<input> 元素有很多形态，根据不同的 type 属性。
+ 比如：text,radio,submit
   Eg:
+ (1)文本输入：text
+ 
   <form>
   First name:<br>
   <input type="text" name="firstname">
   </form>
-  ```
-  效果如下：
-<!DOCTYPE html>
-<html>
-<body>
-
+ 
+ (2)radio单选按钮输入  比 text多了value属性
+ 
 <form>
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+</form> 
+ 
+ （3）submit
+<input type="submit"> 定义用于向表单处理程序（form-handler）提交表单的按钮。
+表单处理程序通常是包含用来处理输入数据的脚本的服务器页面。
+表单处理程序在表单的 action 属性中指定：
+ <from>中的内容由<input type="submit">提交到action="action_page.php"
+ 
+<form action="action_page.php">
 First name:<br>
-<input type="text" name="firstname">
+<input type="text" name="firstname" value="Mickey">
 <br>
 Last name:<br>
-<input type="text" name="lastname">
-</form>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+  ```
 
-<p>请注意表单本身是不可见的。</p>
-
-<p>同时请注意文本字段的默认宽度是 20 个字符。</p>
-
-</body>
-</html>
